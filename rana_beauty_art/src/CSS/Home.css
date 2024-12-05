@@ -1,0 +1,501 @@
+.announcement-bar {
+  background-color: #06732a;
+  color: #fdf9fa;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.cart-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.cart-button span {
+  position: absolute;
+  z-index: 1;
+  color: transparent;
+}
+
+.cart-button img {
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+.cart-button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar {
+  background-color: #e7d5d5cf;
+
+  padding: 8px 20px;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index: 1034;
+  display: flex; /* Align logo and text in a row */
+  gap: 10px;
+  /* Add space between the logo and text */
+  position: relative;
+}
+/* .navbar-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(82, 183, 192);
+  position: relative;
+  font-style: italic;
+} */
+/* .navbar-logo small {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #333;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: -10px;
+  left: 70%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-style: italic;
+}
+.navbar-logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 8px;
+} */
+.nav-icons {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  color: #333;
+  text-decoration: none;
+}
+.nav-icons:hover {
+  color: rgb(98, 157, 228);
+}
+
+.image-section {
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 1s ease-in-out;
+}
+rings {
+  text-align: center;
+}
+
+.image-section img.zoom-out-image {
+  transform: scale(1.5);
+}
+
+.image-section img.zoom-out-image.loaded {
+  transform: scale(1);
+}
+
+.image-overlay {
+  color: #ffffff;
+  display: flex;
+  gap: 25px;
+}
+.image-overlay h1 {
+  padding-right: 12px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.image-overlay p {
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.text-section {
+  position: relative;
+  margin: 50px auto 0;
+  width: 80%;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.text-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.luxury-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #5c3d57;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0px;
+}
+
+.luxury-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.luxury-description {
+  font-family: "Arial", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.7;
+  color: #120909;
+  font-weight: bold;
+
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-img {
+  width: 50%;
+  height: auto;
+  max-height: 570px;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-family: "Arial", sans-serif;
+}
+
+.carousel-text {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: white;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption .btn {
+  background-color: #5c3d57;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #c1a6c5;
+  color: #fff;
+}
+
+.carousel-caption .btn {
+  background-color: #5c3d57;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #c1a6c5;
+  color: #fff;
+}
+
+/* Announcement Bar */
+
+.announcement-link {
+  color: #ffcc00; /* Gold color for links */
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.announcement-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.promo-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+}
+
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+.zoom-out-image {
+  transform: scale(1.5);
+  transition: transform 1s ease-in-out;
+}
+.zoom-out-image.loaded {
+  transform: scale(1);
+}
+.text-section {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.text-section.animate-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+.no-underline {
+  text-decoration: none;
+  color: #fff;
+}
+necklace-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.animated-necklace-text {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #5c3d57;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.animated-necklace-text.animate-necklace {
+  opacity: 1;
+  transform: translateY(0);
+}
+.shop-now-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.shop-now-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.shop-now-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.shop-now-container:hover .shop-now-image {
+  transform: scale(1.05);
+}
+
+.shop-now-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.shop-now-overlay h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.shop-now-btn {
+  background-color: #5c3d57;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #c1a6c5;
+}
+
+.shop-now-btn .no-underline {
+  text-decoration: none;
+  color: white;
+}
+.piercing-section {
+  margin: 50px auto;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Playfair Display", serif;
+}
+
+.piercing-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5c3d57;
+  margin-bottom: 10px;
+}
+
+.piercing-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.piercing-image-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.piercing-image {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  /* opacity: 0; */
+  transform: scale(1.1);
+}
+
+.piercing-image.animate-piercing {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.piercing-btn {
+  margin-top: 20px;
+  background-color: #5c3d57;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+h5,
+h3 {
+  font-style: italic;
+  color: #555;
+  display: flex;
+  flex-direction: column; /* Stack the text vertically */
+}
+.piercing-btn:hover {
+  background-color: #c1a6c5;
+}
+
+.piercing-btn .no-underline {
+  text-decoration: none;
+  color: white;
+}
+.navbar .small-dropdown {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+}
+
+.navbar .dropdown-menu {
+  background-color: #f8f9fa; /* Light background */
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 5px;
+}
+
+.navbar .dropdown-item {
+  font-size: 0.85rem;
+  padding: 8px 15px;
+  color: #212529;
+  transition: background-color 0.2s;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #e9ecef; /* Light hover effect */
+  color: #0d6efd; /* Bootstrap's primary color */
+}
+
+.navbar .dropdown-toggle {
+  background-color: #6c757d; /* Secondary button color */
+  color: #fff;
+  border: none;
+}
+
+.navbar .dropdown-toggle:hover {
+  background-color: #5a6268; /* Darker secondary on hover */
+}

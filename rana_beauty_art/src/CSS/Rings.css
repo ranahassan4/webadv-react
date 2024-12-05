@@ -1,0 +1,87 @@
+.rings-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.rings-container .rings {
+  overflow: hidden;
+  width: 80%;
+  height: 60rem;
+  justify-content: center;
+  align-items: center;
+}
+.rings-container .rings .shop-now-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.rings-container .rings .shop-now-container:hover {
+  transform: scale(1.05);
+}
+.rings-container .rings .shop-now-container .shop-now-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.rings-container .rings .shop-now-container .shop-now-image:hover {
+  transform: scale(1.05);
+}
+.rings-container .rings .shop-now-container .shop-now-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.rings-container .rings .shop-now-container .shop-now-overlay h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.rings-container .rings .carousel-item {
+  transition: left 0.5s ease-in-out;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.rings-container .rings .carousel-item.active {
+  left: 250px;
+  opacity: 1;
+  z-index: 10;
+}
+.rings-container .rings .carousel-item.prev {
+  left: -100%;
+}
+.rings-container .rings .carousel-item.next {
+  left: 100%;
+}
+.rings-container .rings button.move-left,
+.rings-container .rings button.move-right {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.rings-container .rings button.move-left {
+  left: 10px;
+}
+.rings-container .rings button.move-right {
+  right: 10px;
+}
+.rings-container button.move-left,
+.rings-container button.move-right {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Rings.css.map */
