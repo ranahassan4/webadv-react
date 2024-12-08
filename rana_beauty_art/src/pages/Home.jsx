@@ -60,12 +60,6 @@ const Home = () => {
           src={homImage}
           alt="Diamond Background"
         />
-        <div className="image-overlay">
-          <h1>Welcome to Rana Store</h1>
-          <p>
-            The finest collection of diamonds and jewelry for every occasion.
-          </p>
-        </div>
       </div>
 
       {/* About Section */}

@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} alt="Logo" />
           </Link>
-          <h3>Rana Hassan</h3>
+
           <h5>The art of beauty</h5>
         </div>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
           />
 
           <Link to="/Cart" className="cart-button">
-            <span> Cart </span> 🛒
+            <span> 🛒 </span>
           </Link>
         </div>
       </nav>

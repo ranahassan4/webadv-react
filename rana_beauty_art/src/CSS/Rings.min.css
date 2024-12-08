@@ -73,8 +73,7 @@
   left: 100%;
 }
 
-.rings button.move-left,
-.rings button.move-right {
+.rings button.move-left, .rings button.move-right {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -88,8 +87,7 @@
   right: 10px;
 }
 
-button.move-left,
-button.move-right {
+button.move-left, button.move-right {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -103,8 +101,7 @@ button.move-right {
     margin-left: 15px;
     margin-top: 65px;
   }
-  button.move-left,
-  button.move-right {
+  button.move-left, button.move-right {
     margin-bottom: 0px;
   }
   .rings {
@@ -112,4 +109,4 @@ button.move-right {
   }
 }
 
-/*# sourceMappingURL=Rings.css.map */
+/*# sourceMappingURL=Rings.min.css.map */
